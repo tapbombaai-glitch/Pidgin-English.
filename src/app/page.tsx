@@ -6,6 +6,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-700 via-green-600 to-emerald-700 text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 relative">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-medium mb-6">
@@ -18,19 +19,20 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg sm:text-xl text-green-50 mb-8 leading-relaxed max-w-2xl">
-              Talk your Pidgin. Share your voice. Connect with people. Help build
-              the future of Nigerian language technology.
+              Talk your Pidgin. Share your voice. Connect with people. Help
+              build the future of Nigerian language technology.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/record"
+                href="/recording"
                 className="inline-flex items-center justify-center gap-2 bg-white text-green-700 font-bold py-4 px-8 rounded-xl shadow-lg hover:bg-green-50 transition-all text-lg"
               >
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
                 >
                   <path
                     fillRule="evenodd"
@@ -52,13 +54,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How it works */}
+      {/* How It Works */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-3">
               How the Platform Works
             </h2>
+
             <p className="text-slate-600 max-w-2xl mx-auto">
               Simple steps to contribute your voice and help Nigerian Pidgin
               thrive in AI.
@@ -90,9 +93,11 @@ export default function HomePage() {
                 <div className="text-4xl font-bold text-green-100 mb-3">
                   {item.step}
                 </div>
+
                 <h3 className="text-xl font-semibold text-slate-900 mb-2">
                   {item.title}
                 </h3>
+
                 <p className="text-slate-600 text-sm leading-relaxed">
                   {item.desc}
                 </p>
@@ -102,7 +107,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Pidgin matters */}
+      {/* Why Nigerian Pidgin Matters */}
       <section className="py-16 sm:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -110,17 +115,20 @@ export default function HomePage() {
               <h2 className="text-3xl font-bold text-slate-900 mb-4">
                 Why Nigerian Pidgin Matters
               </h2>
+
               <p className="text-slate-600 mb-4 leading-relaxed">
                 Nigerian Pidgin is more than a way of speaking. It carries our
                 culture, humour, stories, everyday experiences, and identity.
                 Millions of people use it daily across Nigeria and the diaspora.
               </p>
+
               <p className="text-slate-600 mb-6 leading-relaxed">
                 Yet most AI systems still struggle to understand natural
                 Nigerian Pidgin speech. Your voice recordings help close that
                 gap — for speech recognition, voice assistants, education,
                 entertainment, and more.
               </p>
+
               <Link
                 href="/about"
                 className="text-green-700 font-semibold hover:underline"
@@ -143,6 +151,7 @@ export default function HomePage() {
                   <div className="text-2xl font-bold text-green-600">
                     {stat.value}
                   </div>
+
                   <div className="text-sm text-slate-500 mt-1">
                     {stat.label}
                   </div>
@@ -153,13 +162,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Voice contributions */}
+      {/* Voice Contributions */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-3">
               How Voice Contributions Help
             </h2>
+
             <p className="text-slate-600 max-w-2xl mx-auto">
               Every clear recording of natural Nigerian Pidgin strengthens the
               dataset that powers future speech technology.
@@ -189,9 +199,11 @@ export default function HomePage() {
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center text-green-700 text-xl">
                   ✓
                 </div>
+
                 <h3 className="font-semibold text-slate-900 mb-2">
                   {item.title}
                 </h3>
+
                 <p className="text-sm text-slate-600">{item.desc}</p>
               </div>
             ))}
@@ -199,20 +211,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Programme highlight */}
+      {/* Community Programme */}
       <section className="py-16 sm:py-20 bg-green-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
             Community Programme
           </div>
+
           <h2 className="text-3xl font-bold text-slate-900 mb-4">
             Gist With Person, Earn ₦500
           </h2>
+
           <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
             Talk 90 minutes of eligible Nigerian Pidgin conversation under the
             published programme rules. Verified minutes only. Transparent
             tracking. Secure reward ledger.
           </p>
+
           <Link
             href="/dashboard"
             className="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-xl shadow-md transition-all"
@@ -228,6 +243,7 @@ export default function HomePage() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">
             From Ademi — Announcements
           </h2>
+
           <div className="card bg-slate-50 border-dashed border-2 border-slate-200 text-center py-12">
             <p className="text-slate-500">
               No announcements yet. Check back soon.
@@ -236,12 +252,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Recent activity */}
+      {/* Recent Activity */}
       <section className="py-16 sm:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900 mb-6">
             Recent Activity
           </h2>
+
           <div className="card bg-white border-dashed border-2 border-slate-200 text-center py-12">
             <p className="text-slate-500">
               No public activity yet. Be the first to contribute!
@@ -250,17 +267,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ teaser */}
+      {/* FAQ */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
             Frequently Asked Questions
           </h2>
+
           <div className="space-y-4">
             {[
               {
                 q: "Is my recording private?",
-                a: "Yes. Private recordings are only visible to you and authorised administrators under strict access controls. Dataset use requires separate, informed consent.",
+                a: "Private recordings are only visible to you and authorised administrators under strict access controls. Dataset use requires separate, informed consent.",
               },
               {
                 q: "Do I get paid automatically?",
@@ -271,33 +289,38 @@ export default function HomePage() {
                 a: "Only if you give explicit, separate consent for voice modelling. Dataset contribution and voice cloning are different permissions.",
               },
             ].map((faq) => (
-              **Summary:**
-
+              <details key={faq.q} className="card group">
+                <summary className="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">
                   {faq.q}
+
                   <span className="text-green-600 group-open:rotate-180 transition-transform">
                     ▼
                   </span>
-                
+                </summary>
+
                 <p className="mt-3 text-slate-600 text-sm leading-relaxed">
                   {faq.a}
                 </p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Call To Action */}
       <section className="py-16 sm:py-20 bg-green-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to give Pidgin a voice?
           </h2>
+
           <p className="text-green-100 mb-8 text-lg">
             Start recording today. Your contribution helps build better
             technology for millions of speakers.
           </p>
+
           <Link
-            href="/record"
+            href="/recording"
             className="inline-flex items-center justify-center gap-2 bg-white text-green-700 font-bold py-4 px-10 rounded-xl shadow-lg hover:bg-green-50 transition-all text-lg"
           >
             Start Recording Now
